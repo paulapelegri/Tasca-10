@@ -3,6 +3,6 @@ def gran_llista(a):
 	return a[-1:]
 
 # Programa principal
-a = [3, 40, 34, 15, 4, 5, 7, 9]
+a = [7, 40, 34, 14, 4, 9, 7, 43]
 c = gran_llista(a)
 print(c[0])
