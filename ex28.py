@@ -1,3 +1,13 @@
+def llegir_llista():
+    b = []
+    a = "a"
+    while a != ".":
+        a = input("Introdueixi el següent número binari: ")
+        if a != ".":
+              b.append(a)
+        else:
+        	return b
+
 def bintodec (bin):
     return int(bin,2)
 def llbintodec(llbin):
@@ -6,7 +16,8 @@ def llbintodec(llbin):
         lldec.append(bintodec(e))
     return lldec
 #Programa principal
-a = ["111101", "101", "1011","1010"]
+a = llegir_llista()
 b = llbintodec(a)
 for i, e in enumerate(b):
-    print("El número binari : ", a[i], " es correspon amb el número decimal: ", e)
+    print("El número binari:", a[i],"es correspon amb el número decimal:", e)
+

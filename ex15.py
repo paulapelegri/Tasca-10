@@ -1,14 +1,16 @@
+def llegir_llista():
+	#Prec: Llegeix una llista d’strings
+	#Post: Retorna la llista llegida.
+	b = []
+	a = "a"
+	while a != ".":
+		a = input("Introdueixi una paraula, per acabar posi . :  ")
+		if a != ".":
+			b.append(a)
+		else:
+			return b
 def longitud(a):
-	long = 0
-	for i in a:
-		long +=1
-	return long
+	return len(a)
 # Ús de la funció
-x = "Cal Dimoni"
+x = llegir_llista()
 print("La longitud de la cadena donada és: ", longitud(x))
-y = [3, 7, 9, "a", "hola", "adeuu"]
-print("La longitud de la llista donada és: ", longitud(y))
-z = (3, 5, 7, 9, 10, 27, 82)
-print("La longitud de la tupla donada és: ", longitud(z))
-w = {3, 5, 7, 9, 10} 
-print("La longitud del conjunt donat és: ", longitud(w))
