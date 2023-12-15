@@ -1,10 +1,14 @@
 def invertir(a):
+    #Prec: invertir una cadena de lletres.
+	#Post: Retorna la cadena invertida.
     b = list(a)
     c = b[::-1]
     r = "".join(c)
     return r
 
 def es_palindrom(a):
+    #Prec: invertir una cadena de lletres.
+	#Post: Retorna la cadena invertida.
     c = invertir(a)
     x = 0
     for i in range(len(a)):
